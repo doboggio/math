@@ -1,4 +1,4 @@
-#include "complex.hpp"
+#include "complex/complex.hpp"
 #include <cassert>
 
 void test_basic_arithmetic()
@@ -94,7 +94,7 @@ void test_real_imag_only()
     assert(result.Real() == 5 && result.Imaginary() == 3);
 }
 
-int main()
+void run_all_tests()
 {
     std::cout << "Running tests...\n";
 
@@ -105,5 +105,4 @@ int main()
     test_real_imag_only();
 
     std::cout << "All tests passed.\n";
-    return 0;
 }
